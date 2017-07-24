@@ -1,8 +1,10 @@
-export const config = {
-  entry: './src/index.js',
+const path = require('path');
+
+module.exports = {
+  entry: path.join(__dirname, 'src/index.js'),
 
   output: {
-    path: '/build',
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js'
   },
 
